@@ -49212,9 +49212,3 @@ function onEachFeature(feature,layer) {
 }
 
 var layers = L.geoJSON(boroughs,{onEachFeature: onEachFeature}).addTo(map)
-
-L.control.search({
-  layer: layers,
-  initial: false,
-  propertyName: 'name'
-}).addTo(map)
